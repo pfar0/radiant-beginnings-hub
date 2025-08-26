@@ -292,7 +292,7 @@ const SupportSystem = () => {
       {/* Quick Stats */}
       <div className="grid grid-cols-3 gap-4 text-center">
         <div className="p-4 bg-green-50 rounded-lg">
-          <div className="text-2xl font-bold text-green-600">< 5min</div>
+          <div className="text-2xl font-bold text-green-600">&lt; 5min</div>
           <div className="text-sm text-green-700">Tempo de resposta</div>
         </div>
         <div className="p-4 bg-blue-50 rounded-lg">

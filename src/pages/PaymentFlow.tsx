@@ -228,7 +228,7 @@ const PaymentFlow = () => {
                       <Checkbox 
                         id="terms" 
                         checked={agreedToTerms}
-                        onCheckedChange={setAgreedToTerms}
+                        onCheckedChange={(checked) => setAgreedToTerms(checked === true)}
                       />
                       <div className="text-sm text-slate-700">
                         <Label htmlFor="terms" className="cursor-pointer">
