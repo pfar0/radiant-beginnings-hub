@@ -9,8 +9,8 @@ const PricingSection = () => {
       icon: User,
       title: "Indivíduos",
       subtitle: "Pessoas físicas",
-      description: "Assinatura mensal de baixo custo para acesso a todos os serviços essenciais",
-      price: "R$ 50-150",
+      description: "Assinatura mensal flexível para acesso a todos os serviços essenciais",
+      price: "R$ 50-1000",
       period: "/mês",
       features: [
         "Acesso completo a todos os serviços",
@@ -26,7 +26,7 @@ const PricingSection = () => {
       title: "Empresas",
       subtitle: "Benefício CLT",
       description: "Ofereça Bandel como benefício aos seus funcionários, aproveitando incentivos fiscais",
-      price: "R$ 70",
+      price: "Até R$ 1000",
       period: "/funcionário/mês",
       features: [
         "Benefício fiscal para empresa",

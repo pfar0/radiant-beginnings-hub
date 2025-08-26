@@ -17,8 +17,8 @@ const Header = () => {
           <a href="/how-it-works" className="text-slate-600 hover:text-slate-900 transition-colors">
             Como Funciona
           </a>
-          <a href="/app-demo" className="text-slate-600 hover:text-slate-900 transition-colors">
-            Demo do App
+          <a href="/app-demo-advanced" className="text-slate-600 hover:text-slate-900 transition-colors">
+            Demo App
           </a>
           <a href="/testimonials" className="text-slate-600 hover:text-slate-900 transition-colors">
             Depoimentos
