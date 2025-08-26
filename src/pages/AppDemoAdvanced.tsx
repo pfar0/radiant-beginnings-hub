@@ -5,8 +5,10 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Progress } from "@/components/ui/progress";
-import { Heart, Car, ShoppingCart, Phone, PlayCircle, Dumbbell, GraduationCap, User, Bell, CreditCard, MapPin, Calendar, Star, Plus, Settings, Search, Download, QrCode } from "lucide-react";
+import { Heart, Car, ShoppingCart, Phone, PlayCircle, Dumbbell, GraduationCap, User, Bell, CreditCard, MapPin, Calendar, Star, Plus, Settings, Search, Download, QrCode, Trophy, Gift } from "lucide-react";
 import { useState } from "react";
+import GamificationSystem from "@/components/GamificationSystem";
+import SupportSystem from "@/components/SupportSystem";
 
 const AppDemoAdvanced = () => {
   const [activeTab, setActiveTab] = useState("home");
@@ -448,28 +450,38 @@ const AppDemoAdvanced = () => {
                       <TabsContent value="home">{renderHomeTab()}</TabsContent>
                       <TabsContent value="services">{renderServicesTab()}</TabsContent>
                       <TabsContent value="wallet">{renderWalletTab()}</TabsContent>
+                      <TabsContent value="gamification"><GamificationSystem /></TabsContent>
+                      <TabsContent value="support"><SupportSystem /></TabsContent>
                       <TabsContent value="profile">{renderProfileTab()}</TabsContent>
                     </Tabs>
                   </div>
                   
                   {/* Bottom Navigation */}
                   <div className="border-t border-slate-200 bg-white">
-                    <TabsList className="w-full h-16 bg-transparent p-2">
-                      <TabsTrigger value="home" className="flex-1 flex-col gap-1 h-12">
-                        <div className="w-5 h-5 bg-current rounded"></div>
-                        <span className="text-xs">Home</span>
+                    <TabsList className="w-full h-16 bg-transparent p-1">
+                      <TabsTrigger value="home" className="flex-1 flex-col gap-1 h-12 text-xs">
+                        <div className="w-4 h-4 bg-current rounded"></div>
+                        <span>Home</span>
                       </TabsTrigger>
-                      <TabsTrigger value="services" className="flex-1 flex-col gap-1 h-12">
-                        <Heart className="w-5 h-5" />
-                        <span className="text-xs">Serviços</span>
+                      <TabsTrigger value="services" className="flex-1 flex-col gap-1 h-12 text-xs">
+                        <Heart className="w-4 h-4" />
+                        <span>Serviços</span>
                       </TabsTrigger>
-                      <TabsTrigger value="wallet" className="flex-1 flex-col gap-1 h-12">
-                        <CreditCard className="w-5 h-5" />
-                        <span className="text-xs">Carteira</span>
+                      <TabsTrigger value="wallet" className="flex-1 flex-col gap-1 h-12 text-xs">
+                        <CreditCard className="w-4 h-4" />
+                        <span>Carteira</span>
                       </TabsTrigger>
-                      <TabsTrigger value="profile" className="flex-1 flex-col gap-1 h-12">
-                        <User className="w-5 h-5" />
-                        <span className="text-xs">Perfil</span>
+                      <TabsTrigger value="gamification" className="flex-1 flex-col gap-1 h-12 text-xs">
+                        <Trophy className="w-4 h-4" />
+                        <span>Pontos</span>
+                      </TabsTrigger>
+                      <TabsTrigger value="support" className="flex-1 flex-col gap-1 h-12 text-xs">
+                        <Gift className="w-4 h-4" />
+                        <span>Ajuda</span>
+                      </TabsTrigger>
+                      <TabsTrigger value="profile" className="flex-1 flex-col gap-1 h-12 text-xs">
+                        <User className="w-4 h-4" />
+                        <span>Perfil</span>
                       </TabsTrigger>
                     </TabsList>
                   </div>

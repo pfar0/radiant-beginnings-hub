@@ -35,12 +35,14 @@ const Header = () => {
           <Button variant="ghost" size="sm" className="text-slate-600 hover:text-slate-900">
             Entrar
           </Button>
-          <Button 
-            size="sm"
-            className="bg-blue-600 hover:bg-blue-700 text-white"
-          >
-            Comece Agora
-          </Button>
+          <a href="/onboarding">
+            <Button 
+              size="sm"
+              className="bg-blue-600 hover:bg-blue-700 text-white"
+            >
+              Comece Agora
+            </Button>
+          </a>
         </div>
       </div>
     </header>
