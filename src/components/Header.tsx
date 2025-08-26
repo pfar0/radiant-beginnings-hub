@@ -1,41 +1,36 @@
 import { Button } from "@/components/ui/button";
-import { CheckCircle } from "lucide-react";
 
 const Header = () => {
   return (
-    <header className="bg-card/80 backdrop-blur-sm border-b border-border/50 sticky top-0 z-50">
+    <header className="bg-white/95 backdrop-blur-sm border-b border-slate-200 sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center shadow-lg">
-            <CheckCircle className="w-6 h-6 text-primary-foreground" />
-          </div>
-          <div>
-            <h1 className="text-xl font-bold text-foreground">Bandel</h1>
-            <p className="text-xs text-muted-foreground">Story Your CV</p>
+          <div className="text-2xl font-bold text-slate-900">
+            Bandel
           </div>
         </div>
         
-        <nav className="hidden md:flex items-center gap-6">
-          <a href="#features" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-            Features
+        <nav className="hidden md:flex items-center gap-8">
+          <a href="#services" className="text-slate-600 hover:text-slate-900 transition-colors">
+            Serviços
           </a>
-          <a href="#templates" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-            Templates
+          <a href="#pricing" className="text-slate-600 hover:text-slate-900 transition-colors">
+            Planos
           </a>
-          <a href="#examples" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-            Examples
+          <a href="#contact" className="text-slate-600 hover:text-slate-900 transition-colors">
+            Contato
           </a>
         </nav>
         
         <div className="flex items-center gap-3">
-          <Button variant="ghost" size="sm">
-            Sign In
+          <Button variant="ghost" size="sm" className="text-slate-600 hover:text-slate-900">
+            Entrar
           </Button>
           <Button 
             size="sm"
-            className="bg-gradient-to-r from-primary to-primary-glow hover:shadow-lg transition-all duration-300"
+            className="bg-blue-600 hover:bg-blue-700 text-white"
           >
-            Get Started
+            Comece Agora
           </Button>
         </div>
       </div>

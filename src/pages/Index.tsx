@@ -1,7 +1,10 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import Features from "@/components/Features";
-import CTASection from "@/components/CTASection";
+import ServicesSection from "@/components/ServicesSection";
+import PricingSection from "@/components/PricingSection";
+import StatsSection from "@/components/StatsSection";
+import ContactSection from "@/components/ContactSection";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -9,9 +12,12 @@ const Index = () => {
       <Header />
       <main>
         <Hero />
-        <Features />
-        <CTASection />
+        <ServicesSection />
+        <PricingSection />
+        <StatsSection />
+        <ContactSection />
       </main>
+      <Footer />
     </div>
   );
 };
