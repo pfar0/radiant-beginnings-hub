@@ -4,6 +4,8 @@ import ServicesSection from "@/components/ServicesSection";
 import PricingSection from "@/components/PricingSection";
 import StatsSection from "@/components/StatsSection";
 import ContactSection from "@/components/ContactSection";
+import Newsletter from "@/components/Newsletter";
+import Chatbot from "@/components/Chatbot";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -16,8 +18,10 @@ const Index = () => {
         <PricingSection />
         <StatsSection />
         <ContactSection />
+        <Newsletter />
       </main>
       <Footer />
+      <Chatbot />
     </div>
   );
 };

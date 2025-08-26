@@ -11,11 +11,20 @@ const Header = () => {
         </div>
         
         <nav className="hidden md:flex items-center gap-8">
-          <a href="#services" className="text-slate-600 hover:text-slate-900 transition-colors">
-            Serviços
+          <a href="/about" className="text-slate-600 hover:text-slate-900 transition-colors">
+            Sobre
           </a>
-          <a href="#pricing" className="text-slate-600 hover:text-slate-900 transition-colors">
-            Planos
+          <a href="/how-it-works" className="text-slate-600 hover:text-slate-900 transition-colors">
+            Como Funciona
+          </a>
+          <a href="/app-demo" className="text-slate-600 hover:text-slate-900 transition-colors">
+            Demo do App
+          </a>
+          <a href="/testimonials" className="text-slate-600 hover:text-slate-900 transition-colors">
+            Depoimentos
+          </a>
+          <a href="/faq" className="text-slate-600 hover:text-slate-900 transition-colors">
+            FAQ
           </a>
           <a href="#contact" className="text-slate-600 hover:text-slate-900 transition-colors">
             Contato
