@@ -5,9 +5,9 @@ const Header = () => {
     <header className="bg-white/95 backdrop-blur-sm border-b border-slate-200 sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <div className="text-2xl font-bold text-slate-900">
+          <a href="/" className="text-2xl font-bold text-slate-900 hover:text-blue-600 transition-colors cursor-pointer">
             Bandel
-          </div>
+          </a>
         </div>
         
         <nav className="hidden md:flex items-center gap-8">
